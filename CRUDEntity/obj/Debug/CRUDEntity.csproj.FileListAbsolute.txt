@@ -1,0 +1,12 @@
+C:\Users\yashb\source\repos\CRUDEntity\CRUDEntity\bin\Debug\CRUDEntity.exe.config
+C:\Users\yashb\source\repos\CRUDEntity\CRUDEntity\bin\Debug\CRUDEntity.exe
+C:\Users\yashb\source\repos\CRUDEntity\CRUDEntity\bin\Debug\CRUDEntity.pdb
+C:\Users\yashb\source\repos\CRUDEntity\CRUDEntity\bin\Debug\EntityFramework.dll
+C:\Users\yashb\source\repos\CRUDEntity\CRUDEntity\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\yashb\source\repos\CRUDEntity\CRUDEntity\bin\Debug\EntityFramework.xml
+C:\Users\yashb\source\repos\CRUDEntity\CRUDEntity\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\yashb\source\repos\CRUDEntity\CRUDEntity\obj\Debug\CRUDEntity.csprojAssemblyReference.cache
+C:\Users\yashb\source\repos\CRUDEntity\CRUDEntity\obj\Debug\CRUDEntity.csproj.CoreCompileInputs.cache
+C:\Users\yashb\source\repos\CRUDEntity\CRUDEntity\obj\Debug\CRUDEntity.csproj.CopyComplete
+C:\Users\yashb\source\repos\CRUDEntity\CRUDEntity\obj\Debug\CRUDEntity.exe
+C:\Users\yashb\source\repos\CRUDEntity\CRUDEntity\obj\Debug\CRUDEntity.pdb
