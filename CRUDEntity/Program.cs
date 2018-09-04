@@ -10,56 +10,79 @@ namespace CRUDEntity
     {
         static void Main(string[] args)
         {
-            int select = 1;
+            string select;
+            DisplayMenu();
 
             Program program = new Program();
+
             
-             
-                Console.WriteLine("Enter \n1 : Add New Course : \n"
-                    +
-                    "2 : Add new Student :\n" +
-                    "3 : DeleteStudent :\n" +
-                    "4 : Update New Course :\n" +
-                    "5 : View Student :\n" +
-                    "6 : Exit ");
-
-
-                select = Convert.ToInt32(Console.ReadLine());
+           select = Console.ReadLine();
             
            
          
             switch (select)
             {
-                case 1:
+                case "1":
                     program.AddCourse();
-                   
+                    Console.ReadKey();
+                    
+                    
+                    DisplayMenu();
+                    Console.ReadKey();
+
 
                     break;
-                case 2:
+                case "2":
                     program.AddStudent();
+                    Console.ReadKey();
+                    DisplayMenu();
+
+                    Console.ReadKey();
+                   
                     break;
-                case 3:
+                case "3":
                     program.DeleteStudent();
+                    
+                    Console.ReadKey();
+                    DisplayMenu();
                     break;
-                case 4:
+                case "4":
                     program.UpdateStudent();
                     Console.ReadKey();
+                    DisplayMenu();
                     break;
                 
-                case 5:
+                case "5":
                     program.ViewStudentRecord();
+                   Console.ReadKey();
+                    DisplayMenu();
+
                     break;
 
                 default:
                     Console.WriteLine("Please Enter no between 1 to 5");
                     Console.ReadKey();
+                    Console.Clear();
+                    DisplayMenu();
                     break;
                   
             }
+          
+
 
             
 
 
+        }
+        static void DisplayMenu()
+        {
+            Console.WriteLine("Enter \n1 : Add New Course : \n"
+                                +
+                                "2 : Add new Student :\n" +
+                                "3 : DeleteStudent :\n" +
+                                "4 : Update New Course :\n" +
+                                "5 : View Student :\n" +
+                                "6 : Exit ");
         }
 
         private void AddCourse()
@@ -78,8 +101,9 @@ namespace CRUDEntity
                 model1.Courses.Add(course);
                 model1.SaveChanges();
 
-                Console.ReadKey();
+               
             }
+            
 
         }
         private void AddStudent()
@@ -110,6 +134,7 @@ namespace CRUDEntity
                 };
                 model1.Students.Add(student);
                 model1.SaveChanges();
+                
             }
         }
         private void DeleteStudent()
