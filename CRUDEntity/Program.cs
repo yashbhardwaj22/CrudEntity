@@ -10,62 +10,48 @@ namespace CRUDEntity
     {
         static void Main(string[] args)
         {
-            string select;
-            DisplayMenu();
+            string select = "";
+            
 
             Program program = new Program();
 
-            
-           select = Console.ReadLine();
-            
-           
-         
-            switch (select)
+
+            while (select != "6")
             {
-                case "1":
-                    program.AddCourse();
-                    Console.ReadKey();
-                    
-                    
-                    DisplayMenu();
-                    Console.ReadKey();
+                DisplayMenu();
+                select = Console.ReadLine();
 
 
-                    break;
-                case "2":
-                    program.AddStudent();
-                    Console.ReadKey();
-                    DisplayMenu();
 
-                    Console.ReadKey();
-                   
-                    break;
-                case "3":
-                    program.DeleteStudent();
-                    
-                    Console.ReadKey();
-                    DisplayMenu();
-                    break;
-                case "4":
-                    program.UpdateStudent();
-                    Console.ReadKey();
-                    DisplayMenu();
-                    break;
-                
-                case "5":
-                    program.ViewStudentRecord();
-                   Console.ReadKey();
-                    DisplayMenu();
+                switch (select)
+                {
+                    case "1":
+                        program.AddCourse();
+                        break;
+                    case "2":
+                        program.AddStudent();
 
-                    break;
+                        break;
+                    case "3":
+                        program.DeleteStudent();
 
-                default:
-                    Console.WriteLine("Please Enter no between 1 to 5");
-                    Console.ReadKey();
-                    Console.Clear();
-                    DisplayMenu();
-                    break;
-                  
+                        break;
+                    case "4":
+                        program.UpdateStudent();
+
+                        break;
+
+                    case "5":
+                        program.ViewStudentRecord();
+                        break;
+                    case "6":
+                        break;
+
+                    default:
+                        Console.WriteLine("Please Enter no between 1 to 5");
+                        break;
+
+                }
             }
           
 
